@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element Selector*/
+        div{
+            background-color: red;
+        }
+        /*.class Selector*/
+        .red{
+            background-color: yellow;
+        }
+        /* Id Selector */
+        #green {
+            background-color: blue;
+        }
+        /* child Selector */
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+        /* Decendant Selector */
+        div p{                                     
+            background-color: orange;
+            color: black;
+        }
+        /* Universal selector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo Selector*/
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: yellow;
+        }
+        a:hover{
+            background-color: rgb(226, 19, 150);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>I AM A DIV                                                  <!-- Element selector-->
+        <p>I am a example of child selector</p>                      <!-- Child selector (this paragraph is a child of div);DIV KE ANDR direct paragraph ho to child selector use hoga--> 
+        
+        <article><p> This is a second paragraph</p>                  <!-- div ke andr p(paragraph) hona chahya chahe oo kiske through v ho(div,article,main,footer ke andr)p ho oo div ke andr hona chahya kise n kise from me yani ki descendent hona chahya div k-->
+        </article>                    <!-- yaha pe direct child ni raha div ke andr article h..fir uske bd p h..yani (paragraph)-->
+    </div>
+    <div class="red">i am a second div</div>                          <!-- Class selector-->
+    <div id="green">i am thired div</div>                             <!-- Id selector-->
+ 
+    <a href="https:// www.google.com">GO TO google</a>
+    <a href="https:// www.facebook.com">GO TO Facebook</a>
+</body>
+</html>
